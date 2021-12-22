@@ -10,19 +10,24 @@ import { MessagesComponent } from './messages/messages.component';
 
 import { AppRoutingModule } from './app-routing.module';
 import { from } from 'rxjs';
+import { HeroTableComponent } from './hero-table/hero-table.component';
+import {TableModule} from 'primeng/table';
+
 
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TableModule
   ],
   declarations: [
     AppComponent,
     DashboardComponent,
     HeroesComponent,
     HeroDetailComponent,
-    MessagesComponent
+    MessagesComponent,
+    HeroTableComponent
   ],
   bootstrap: [ AppComponent ]
 })

@@ -1,0 +1,18 @@
+<p>hero-table works!</p>
+
+
+<p-table [value]="heroes">
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Hero Name</th>
+            <th>ID</th>         
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-hero>
+        <tr>
+            <td>{{hero.name}}</td>
+            <td>{{hero.id}}</td>         
+        </tr>
+    </ng-template>
+  </p-table>
+  
